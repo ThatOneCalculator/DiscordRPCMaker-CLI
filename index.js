@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 
-let id = "2b7de0447f"
-
 const RPC = require('discord-rpc')
-const yargs = require('yargs/yargs')
-const { hideBin } = require('yargs/helpers')
 const fs = require('fs')
 const os = require('os')
 const path = require('path')
 
 const slash = os.platform() == 'win32' ? "\\" : "/"
 const dir = `${os.userInfo().homedir}/${process.platform === 'win32' ? '/AppData/Roaming/drpcm/' : '/.config/drpcm/'}`
+
+const args = process.argv.slice(2)
+const id = args[0]
 
 let client = new RPC.Client({ transport: 'ipc' })
 
@@ -21,7 +20,6 @@ let options = JSON.parse(fs.readFileSync(fullpath, 'utf8'))
 let settings = JSON.parse(fs.readFileSync(settingspath, 'utf8'))
 let activity = {}
 let assets = {}
-
 
 if (options.largeimage !== '') {
   activity.largeImageKey = options.largeimage

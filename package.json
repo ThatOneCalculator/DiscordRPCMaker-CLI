@@ -21,8 +21,7 @@
   },
   "homepage": "https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI#readme",
   "dependencies": {
-    "discord-rpc": "^3.2.0",
-    "yargs": "^17.0.0"
+    "discord-rpc": "^3.2.0"
   },
   "bin": {
     "discordrpcmaker-cli": "./index.js"
