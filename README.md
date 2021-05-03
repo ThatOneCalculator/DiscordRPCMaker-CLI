@@ -7,11 +7,12 @@ Dependencies:
 - Discord RPC Maker
 - Very basic CLI knowledge
 
+Install command:
 ```
-sudo npm i -g discordrpcmaker-cli
+npm i -g discordrpcmaker-cli
 ```
 
-### Run
+### Run:
 Get the file ID from the main app
 `discordrpcmaker-cli fileid` to run.
 `discordrpcmaker-cli -t fileid` to run with time elapsed.
