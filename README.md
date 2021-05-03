@@ -1,7 +1,7 @@
 # DiscordRPCMaker-CLI
 CLI utility for [Discord RPC Maker](https://drpcm.t1c.dev), for those who can't stand bloat.
 
-### Install:
+## Install:
 Dependencies:
 - NodeJS & npm
 - Discord RPC Maker
@@ -12,7 +12,7 @@ Install command:
 npm i -g discordrpcmaker-cli
 ```
 
-### Run:
+## Run:
 Get the file ID from the main app
 `discordrpcmaker-cli fileid` to run.
 `discordrpcmaker-cli -t fileid` to run with time elapsed.
