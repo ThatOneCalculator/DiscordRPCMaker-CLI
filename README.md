@@ -10,8 +10,9 @@ sudo mv ./discordrpcmaker-cli /usr/bin/discordrpcmaker-cli
 ```
 
 Manual binaries (Linux/Windows only):
-**[[Linux](https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli)]
-[[Windows](https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli.exe)]**
+
+- **[[Linux](https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli)]**
+- **[[Windows](https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli.exe)]**
 
 From source:
 ```
