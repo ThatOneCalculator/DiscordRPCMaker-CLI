@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+let id = "2b7de0447f"
+
 const RPC = require('discord-rpc')
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
@@ -12,13 +14,14 @@ const dir = `${os.userInfo().homedir}/${process.platform === 'win32' ? '/AppData
 
 let client = new RPC.Client({ transport: 'ipc' })
 
-let opendir = dir.replaceAll("/", "\\").replaceAll("\\\\", "\\")
+let opendir = dir.replace("/", "\\").replace("\\\\", "\\")
 let fullpath = os.platform() == "win32" ? opendir + "\\" + id + ".json" : dir + "/" + id + ".json"
 let settingspath = os.platform() == "win32" ? opendir + "\\" + "settings.json" : dir + "/" + "settings.json"
 let options = JSON.parse(fs.readFileSync(fullpath, 'utf8'))
 let settings = JSON.parse(fs.readFileSync(settingspath, 'utf8'))
 let activity = {}
 let assets = {}
+
 
 if (options.largeimage !== '') {
   activity.largeImageKey = options.largeimage
@@ -40,7 +43,6 @@ if (settings.showtimestamp == true) {
 }
 
 function assembleClient(timeout = 5000) {
-  console.log("Crashed! Retrying...")
   client.destroy()
   client = new RPC.Client({ transport: 'ipc' })
   client.on('ready', () => {
@@ -55,6 +57,7 @@ function assembleClient(timeout = 5000) {
 
 process.on("unhandledRejection", e => {
   if (e.message === "Could not connect") {
+    console.log("Crashed! Retrying...")
     assembleClient()
   }
 })
