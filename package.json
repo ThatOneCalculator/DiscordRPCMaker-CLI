@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/issues"
   },
-  "homepage": "https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI#readme"
+  "homepage": "https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI#readme",
+  "dependencies": {
+    "discord-rpc": "^3.2.0",
+    "yargs": "^17.0.0"
+  }
 }

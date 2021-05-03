@@ -15,6 +15,5 @@ npm i -g discordrpcmaker-cli
 ## Run:
 Get the file ID from the main app
 `discordrpcmaker-cli fileid` to run.
-`discordrpcmaker-cli -t fileid` to run with time elapsed.
 
 Run in the background with `discordrpcmaker-cli fileid & disown` on Linux/macOS or `start /b discordrpcmaker-cli fileid` on Windows.
