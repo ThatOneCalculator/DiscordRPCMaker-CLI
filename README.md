@@ -5,7 +5,8 @@ CLI utility for [Discord RPC Maker](https://drpcm.t1c.dev), for those who can't 
 [AUR](https://aur.archlinux.org/packages/discordrpcmaker-cli):
 ```
 yay -S discordrpcmaker-cli
-``` (replace yay with your AUR helper of choice)
+``` 
+(replace yay with your AUR helper of choice)
 
 Linux fast install:
 ```
