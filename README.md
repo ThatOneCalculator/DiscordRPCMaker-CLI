@@ -2,17 +2,23 @@
 CLI utility for [Discord RPC Maker](https://drpcm.t1c.dev), for those who can't stand bloat.
 
 ## Install:
-Fast install (Linux only):
+[AUR](https://aur.archlinux.org/packages/discordrpcmaker-cli):
+```
+yay -S discordrpcmaker-cli
+``` (replace yay with your AUR helper of choice)
+
+Linux fast install:
 ```
 wget https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli
 chmod +x ./discordrpcmaker-cli
 sudo mv ./discordrpcmaker-cli /usr/bin/discordrpcmaker-cli
 ```
 
-Manual binaries (Linux/Windows only):
+Manual binaries:
 
 - **[[Linux](https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli)]**
 - **[[Windows](https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli.exe)]**
+- **[[macOS](https://github.com/ThatOneCalculator/DiscordRPCMaker-CLI/releases/download/v1.0.0/discordrpcmaker-cli-macos)]**
 
 From source:
 ```

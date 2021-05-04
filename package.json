@@ -1,6 +1,6 @@
 {
   "name": "discordrpcmaker-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI utility for Discord RPC Maker",
   "main": "index.js",
   "scripts": {
